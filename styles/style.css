@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+
+:root {
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
+  --cyan: hsl(158, 36%, 37%);
+  --darkblue: hsl(212, 21%, 14%);
+  --grayblue: hsl(228, 12%, 48%);
+  --principal-font: 'Fraunces', serif;
+  --secondary-font: 'Montserrat', sans-serif;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--cream);
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  max-width: 50rem;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+p {
+  font-family: var(--secondary-font);
+  font-size: 1.2rem;
+  color: var(--grayblue);
+}
+
+.card-banner,
+.card-picture,
+.mobile-img {
+  margin: 0;
+  width: 100%;
+  display: block;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.text {
+  width: 50%;
+  background-color: var(--white);
+  border-radius: 0 1rem 1rem 0;
+  padding: 2.4rem;
+}
+
+.product-item {
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+}
+
+p,h1,h2 {
+}
+
+.card-title {
+  font-family: var(--principal-font);
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--darkblue);
+}
+
+.card-desc {
+  line-height: 1.5;
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+  margin-top: -2rem ;
+}
+
+.price-new {
+  font-size: 2.5rem;
+  margin-right: 2rem;
+  font-family: var(--principal-font);
+  color: var(--cyan);
+}
+
+.price-old {
+  margin: 0;
+  text-decoration: line-through;
+}
+
+.btn {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  border: none;
+  background-color: var(--cyan);
+  color: var(--white);
+  font-family: var(--secondary-font);
+}
+
+.btn:hover{
+  background-color: hsl(158, 36%, 27%);
+}
+
+.attribution {
+  color: var(--grayblue);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .box {
+    flex-direction: column;
+    max-width: 375px;
+    margin-top: 2rem;
+  }
+  .photo {
+    width: 100%;
+  }
+  .photo img {
+    border-radius: 1rem 1rem 0 0;
+  }
+  .text {
+    width: 100%;
+  }
+}
