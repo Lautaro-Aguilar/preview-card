@@ -1,0 +1,94 @@
+html {
+    background-color: $cream;
+}
+
+body {
+    margin-top: 2rem;
+}
+
+p,
+h1,
+h2 {
+    margin: 0;
+    padding-top: 1.5rem;
+}
+
+.contenedor-imagen{
+    background-color: $cream;
+    .imagen {
+        border-radius: 1rem 1rem 0 0;
+        background-color: $cream;
+    }
+}
+
+.product-name,
+.product-description {
+    margin: 0;
+    font-family: $fuente_principal, serif;
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: $grayblue;
+}
+
+.product-name {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
+    color: $grayblue;
+}
+.producto-test {
+    margin: 0rem 2rem 2rem 2rem;
+}
+.product-title {
+    font-family: $fuente_secundaria, sans-serif;
+    font-weight: 700;
+    color: $darkblue;
+    font-size: 4rem;
+    line-height: 1.1;
+}
+
+.contenedor-carta {
+    background-color: $white;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.contenedor-precios{
+    display: flex;
+    align-items: center;
+    .product-precio {
+        font-family: $fuente_secundaria;
+        color: $cyan;
+        font-size: 3.5rem;
+    }
+    .product-precio-ant {
+        color: $grayblue;
+        margin-left: 1.5rem;
+        text-decoration: line-through;
+    }
+}
+
+button {
+    width: 100%;
+    margin-bottom: 2.5rem ;
+    padding: 1.5rem 0;
+    background-color: $cyan;
+    color: $white;
+    font-family: $fuente_principal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: 0;
+    border-radius: 1rem;
+}
+
+button:hover{
+    background: darken($cyan, 20);
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
